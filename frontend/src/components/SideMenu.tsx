@@ -9,6 +9,7 @@ export default function SideMenu() {
   const menuItems = [
     { href: '/', label: 'ホーム' },
     { href: '/posts', label: '投稿一覧' },
+    { href: '/scheduler', label: 'スケジューラー' },
   ];
 
   return (

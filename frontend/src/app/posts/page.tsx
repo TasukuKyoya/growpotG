@@ -37,7 +37,7 @@ export default function Posts() {
         <div className="mt-8 space-y-4">
           {posts.map((post) => (
             <div key={post.id} className="border p-4 rounded">
-              <div className="font-bold">{post.title}</div>
+              <div className="font-bold">{post.user_name}</div>
               <div className="mt-2">{post.content}</div>
             </div>
           ))}
