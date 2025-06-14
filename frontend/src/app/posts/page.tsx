@@ -1,5 +1,6 @@
 "use client";
 
+import CirclePhotoCard from "@/components/circlePhotoCard";
 import TextareaChat from "@/components/TextareaChat";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -38,7 +39,7 @@ export default function Posts() {
           {posts.map((post) => (
             <div key={post.id} className="border p-4 rounded">
               <div className="font-bold">
-                <img src={post.profile_image}/>
+                <CirclePhotoCard src={post.profile_image}/>
                 </div>
               <div className="font-bold">{post.user_name}</div>
               <div className="mt-2">{post.content}</div>
